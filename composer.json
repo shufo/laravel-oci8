@@ -23,13 +23,19 @@
         "illuminate/pagination": "^11.15.0",
         "illuminate/support": "^11.15.0",
         "illuminate/validation": "^11.15.0",
-        "yajra/laravel-pdo-via-oci8": "^3.4.4"
+        "yajra/laravel-pdo-via-oci8": "dev-fix/php_8_4_connect"
     },
     "require-dev": {
         "mockery/mockery": "^1.6.12",
         "orchestra/testbench": "^9.1.2",
         "phpunit/phpunit": "^10.5|^11.2.7"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/shufo/pdo-via-oci8"
+        }
+    ],
     "autoload": {
         "files": [
             "src/helper.php"
